@@ -1,3 +1,7 @@
 <h1>Welcome to {{ title }}</h1>
 
 <app-input-button-unit></app-input-button-unit>
+
+<ul *ngFor="let todoItem of todoList">
+  <li>{{ todoItem.title }}</li>
+</ul>
