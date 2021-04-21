@@ -2,6 +2,9 @@
 
 <app-input-button-unit></app-input-button-unit>
 
-<ul *ngFor="let todoItem of todoList">
-  <li>{{ todoItem.title }}</li>
+<ul>
+  <li *ngFor="let todoItem of todoList">
+    <!-- pass todo item -->
+    <app-todo-item [item]="todoItem"></app-todo-item>
+  </li>
 </ul>

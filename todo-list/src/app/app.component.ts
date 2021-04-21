@@ -9,6 +9,7 @@ export class AppComponent {
   // property
   title = 'todo-list';
 
+  // array of todos
   todoList = [
     {title: 'install NodeJS'},
     {title: 'install Angular CLI'},
