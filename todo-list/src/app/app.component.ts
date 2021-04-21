@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TodoItem } from './interfaces/todo-item';
 
 @Component({
   selector: 'app-root', // name of tag we will use in component
@@ -10,7 +11,7 @@ export class AppComponent {
   title = 'todo-list';
 
   // array of todos
-  todoList = [
+  todoList: TodoItem[] = [
     {title: 'install NodeJS'},
     {title: 'install Angular CLI'},
     {title: 'create new app'},
