@@ -11,7 +11,7 @@ export class InputButtonUnitComponent implements OnInit {
   @Output() submit: EventEmitter<string> = new EventEmitter<string>();
 
   // property
-  title = 'Hello World';
+  title = '';
 
   constructor() {
   }

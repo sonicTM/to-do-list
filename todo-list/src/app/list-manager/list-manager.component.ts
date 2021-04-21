@@ -16,12 +16,12 @@ export class ListManagerComponent implements OnInit {
 
   // array of todos
   todoList: TodoItem[] = [
-    {title: 'install NodeJS'},
-    {title: 'install Angular CLI'},
-    {title: 'create new app'},
-    {title: 'serve app'},
-    {title: 'develop app'},
-    {title: 'deploy app'},
+    {title: 'Install NodeJS'},
+    {title: 'Install Angular CLI'},
+    {title: 'Create new app'},
+    {title: 'Serve app'},
+    {title: 'Develop app'},
+    {title: 'Deploy app'},
   ]
 
   // add item todo list
