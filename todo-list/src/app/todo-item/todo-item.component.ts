@@ -14,9 +14,19 @@ export class TodoItemComponent implements OnInit {
   // pass to parent to remove item
   @Output() remove: EventEmitter<TodoItem> = new EventEmitter<TodoItem>();
 
+  @Output() update: EventEmitter<any> = new EventEmitter<any>();
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  // put this method below ngOnInit
+  completeItem(): void {
+    this.update.emit({
+      item: this.item,
+      changes: {completed: !this.item.completed}
+    });
   }
 
   removeItem(): void {
