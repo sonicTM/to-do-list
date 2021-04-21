@@ -7,11 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InputButtonUnitComponent implements OnInit {
 
+  // property
   title = 'Hello World';
 
-  constructor() { }
+  constructor() {
+    console.log('in constructor');
+    this.changeTitle('My First Angular App - constructor');
+    console.log(this.title);
+  }
 
   ngOnInit(): void {
+    console.log('in init');
+    this.changeTitle('My First Angular App - init');
+  }
+
+  // method
+  changeTitle(newTitle: string) {
+    console.log(newTitle);
+    this.title = newTitle;
   }
 
 }
