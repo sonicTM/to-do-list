@@ -1,2 +1,7 @@
 <p>input-button-unit works!</p>
 <p>The title is: {{ title }}</p>
+<!-- [] bind to element property -->
+<input type="text" [value]="generateTitle()">
+<button>Save</button>
+
+<p>{{ generateTitle() }}</p>
