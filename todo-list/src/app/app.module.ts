@@ -6,6 +6,7 @@ import { InputButtonUnitComponent } from './input-button-unit/input-button-unit.
 import { TodoItemComponent } from './todo-item/todo-item.component';
 import { ListManagerComponent } from './list-manager/list-manager.component';
 import { TodoListService } from './services/todo-list.service';
+import { HttpClientModule } from '@angular/common/http';
 
 // decorator
 @NgModule({
@@ -18,7 +19,8 @@ import { TodoListService } from './services/todo-list.service';
   ],
   // list of other ngModules required for this module
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [TodoListService],
   // relevant only to root. Tells angular which component is root
