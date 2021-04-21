@@ -7,22 +7,8 @@ import { TodoItem } from './interfaces/todo-item';
   styleUrls: ['./app.component.scss'] // styles
 })
 export class AppComponent {
+
   // property
-  title = 'todo-list';
-
-  // array of todos
-  todoList: TodoItem[] = [
-    {title: 'install NodeJS'},
-    {title: 'install Angular CLI'},
-    {title: 'create new app'},
-    {title: 'serve app'},
-    {title: 'develop app'},
-    {title: 'deploy app'},
-  ]
-
-  // add item todo list
-  addItem(title: string) {
-    this.todoList.push({title});
-  }
+  title = 'My To Do List APP';
 
 }

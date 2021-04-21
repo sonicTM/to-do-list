@@ -1,11 +1,3 @@
 <h1>Welcome to {{ title }}</h1>
 
-<!-- pass submit event to parent -->
-<app-input-button-unit (submit)="addItem($event)"></app-input-button-unit>
-
-<ul>
-  <li *ngFor="let todoItem of todoList">
-    <!-- pass todo item value to child -->
-    <app-todo-item [item]="todoItem"></app-todo-item>
-  </li>
-</ul>
+<app-list-manager></app-list-manager>
