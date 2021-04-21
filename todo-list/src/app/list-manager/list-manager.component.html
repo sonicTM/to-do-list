@@ -5,7 +5,7 @@
   <ul>
     <li *ngFor="let todoItem of todoList">
       <!-- pass todo item value to child -->
-      <app-todo-item [item]="todoItem"></app-todo-item>
+      <app-todo-item [item]="todoItem" (remove)="removeItem($event)"></app-todo-item>
     </li>
   </ul>
 </div>

@@ -48,4 +48,13 @@ export class TodoListService {
     this.storageService.setData(todoListStorageKey, this.todoList);
   }
 
+  // remove item
+  deleteItem(item: TodoItem): void {
+    // look for item in list
+    const index = this.todoList.indexOf(item);
+    // remove item starting from index
+    this.todoList.splice(index, 1);
+    this.saveList();
+  }
+
 }
