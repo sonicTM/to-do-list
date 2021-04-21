@@ -11,10 +11,10 @@ export class TodoItemComponent implements OnInit {
   // pass values
   @Input() item: TodoItem; // define type
 
-  // pass to parent to remove item
+  // pass to parent
   @Output() remove: EventEmitter<TodoItem> = new EventEmitter<TodoItem>();
-
   @Output() update: EventEmitter<any> = new EventEmitter<any>();
+  @Output() edit: EventEmitter<any> = new EventEmitter<any>();
 
   constructor() { }
 
@@ -32,6 +32,10 @@ export class TodoItemComponent implements OnInit {
   removeItem(): void {
     // emit event to parent
     this.remove.emit(this.item);
+  }
+
+  editItem(): void {
+    this.edit.emit(this.item);
   }
 
 }

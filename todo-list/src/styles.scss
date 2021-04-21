@@ -44,6 +44,14 @@ ol, ul {
   background: darkred;
 }
 
+.btn-blue {
+  background: darkblue;
+}
+
+.btn-blue:hover {
+  background: darken($color: darkblue, $amount: 15);
+}
+
 .app-title {
   font-size: 32px;
   line-height: 52px;
